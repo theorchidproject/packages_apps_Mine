@@ -14,6 +14,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+     <!-- Color Picker -->
+     <string name="dialog_color_picker">Color Picker</string>
+     <string name="press_color_to_apply">Press on color below to apply</string>
+     <string name="arrow_right">→</string>
+     <string name="arrow_down">↓</string>
+     <string name="hex">Hex:</string>
+     <string name="hex_hint" translatable="false">#FFDDDDDD</string>
+     <string name="hex_check_button_text">PREVIEW</string>
+     <string name="hex_reset_button_text">RESET</string>
+     <string name="set">Set</string>
+     <string name="color_default">Default</string>
+     <string name="color_right_arrow" translatable="false">"→"</string>
+     <string name="color_down_arrow" translatable="false">"↓"</string>
+     <string name="longpress_info">Longpress box to save color</string>
+
+     <!-- SeekBar -->
+     <string name="seekbar_no_default_value">No default value set</string>
+     <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+     <string name="seekbar_default_value_already_set">Default value is already set</string>
+     <string name="seekbar_default_string">Default</string>
+
      <!-- General -->
      <string name="ok">Okay</string>
      <string name="default_string">Default</string>
@@ -58,6 +79,7 @@
      <string name="call_pref_title">Phone call options</string>
      <string name="monet_pref_title">Monet Controls</string>
      <string name="traffic_pref_title">Network traffic indicator</string>
+     <string name="qs_brightness_pref_title">Brightness slider</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -169,5 +191,82 @@
      <!-- Tiles on secure keyguard -->
      <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
      <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lock screen when using sensitive tiles</string>
+
+     <!-- Volume rocker cursor control -->
+     <string name="cursor_section_header">Cursor</string>
+     <string name="volume_key_cursor_control_title">Keyboard cursor control</string>
+     <string name="volume_key_cursor_control_off">Disabled</string>
+     <string name="volume_key_cursor_control_on">Volume Up/Down - Cursor Left/Right</string>
+     <string name="volume_key_cursor_control_on_reverse">Volume Up/Down - Cursor Right/Left</string>
+
+     <!-- Volume rocker wake -->
+     <string name="volume_rocker_wake_title">Volume rocker wake</string>
+     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
+     <!-- Show VoLTE icon on statusbar -->
+     <string name="volte_icon_title">VoLTE icon</string>
+     <string name="volte_icon_summary">Display VoLTE icon</string>
+
+     <!-- QuickSettings haptic feedback -->
+     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+     <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+
+     <!-- Statusbar net monitor -->
+     <string name="traffic_title">Traffic indicators</string>
+     <string name="network_traffic_state_summary">Show net activity in statusbar</string>
+     <string name="network_traffic">Network traffic</string>
+     <string name="network_traffic_state_title">Network traffic display</string>
+     <string name="network_traffic_location">Traffic indicator placement</string>
+     <string name="traffic_disabled">Disabled</string>
+     <string name="traffic_statusbar">Statusbar</string>
+     <string name="traffic_expanded_statusbar">Expanded header</string>
+     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+     <string name="network_traffic_arrow">Show arrows</string>
+     <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
+     <string name="network_traffic_type">Select net activity type</string>
+     <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
+     <string name="show_network_traffic_dynamic">Dynamic</string>
+     <string name="show_network_traffic_up">Upload</string>
+     <string name="show_network_traffic_down">Download</string>
+     <string name="show_network_traffic_all">Both</string>
+     <string name="nettraf_font_size">Single net font size</string>
+
+     <!-- Data disabled icon -->
+     <string name="data_disabled_icon_title">Show data disabled icon</string>
+     <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+
+     <!-- Roaming indicator icon -->
+     <string name="roaming_indicator_icon_title">Roaming indicator</string>
+     <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+
+     <!-- Blink flashlight for incoming calls -->
+     <string name="flashlight_on_call_title">Blink Flashlight for incoming call</string>
+     <string name="flashlight_on_call_disabled">Disabled</string>
+     <string name="flashlight_on_call_ringer">When ringing</string>
+     <string name="flashlight_on_call_no_ringer">When ringer is silent</string>
+     <string name="flashlight_on_call_silent">When entirely silent (no ringer or vibrator)</string>
+     <string name="flashlight_on_call_always">Always</string>
+     <string name="flashlight_on_call_ignore_dnd_title">Ignore DND</string>
+     <string name="flashlight_on_call_ignore_dnd_summary">Whether to flash when in Do Not Disturb mode</string>
+     <string name="flashlight_on_call_rate_title">Rate</string>
+     <string name="flashlight_on_call_rate_summary">Flashlight on call blink rate</string>
+
+     <!-- Quick Settings brightness slider -->
+     <string name="qs_brightness_slider_title">Show brightness slider</string>
+     <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+     <string name="qs_brightness_position_bottom_title">Show brightness slider on bottom</string>
+     <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
+
+     <!-- Quick Settings brightness icon -->
+     <string name="brightness_icon_title">Adaptive brightness button</string>
+     <string name="brightness_icon_summary">Show adaptive brightness button</string>
+
+     <!-- Quick QS Panel brightness slider -->
+     <string name="quick_qs_brightness_slider_title">Show brightness slider in Quick QS Panel</string>
+     <string name="quick_qs_brightness_slider_summary">Show a brightness slider in the quick qs panel</string>
+
+     <!-- Brightness control -->
+     <string name="status_bar_toggle_brightness">Brightness control</string>
+     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
 </resources>

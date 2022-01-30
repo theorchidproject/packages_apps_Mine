@@ -20,7 +20,7 @@
      <PreferenceCategory
           android:title="@string/notif_pref_title">
 
-     <com.crystal.support.preferences.SystemSettingSwitchPreference
+     <com.crystal.mine.preferences.SystemSettingSwitchPreference
           android:key="notification_sound_vib_screen_on"
           android:title="@string/notification_sound_vib_screen_on_title"
           android:summary="@string/notification_sound_vib_screen_on_summary"

@@ -20,7 +20,7 @@
 
         android:title="@string/ls_unlock_pref_title">
 
-        <com.crystal.support.preferences.SystemSettingSwitchPreference
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
             android:key="fp_unlock_keystore"
             android:title="@string/fp_unlock_keystore_title"
             android:summary="@string/fp_unlock_keystore_summary"
