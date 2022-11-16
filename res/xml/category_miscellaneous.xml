@@ -18,37 +18,6 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/category_miscellaneous_title" >
 
-     <PreferenceCategory
-          android:key="selinux"
-          android:title="@string/selinux_pref_title">
 
-          <Preference
-               android:summary="@string/selinux_explanation_summary"
-               android:selectable="false"/>
-
-          <SwitchPreference
-               android:key="selinux_mode"
-               android:title="@string/selinux_mode_title"
-               android:summaryOn="@string/selinux_enforcing_summary"
-               android:summaryOff="@string/selinux_permissive_summary" />
-
-          <SwitchPreference
-               android:key="selinux_persistence"
-               android:title="@string/selinux_persistence_title"
-               android:summary="@string/selinux_persistence_summary"
-               android:defaultValue="true" />
-
-     </PreferenceCategory>
-
-     <PreferenceCategory
-          android:title="@string/wakeonplug_pref_title">
-
-          <com.crystal.mine.preferences.GlobalSettingSwitchPreference
-            android:key="wake_when_plugged_or_unplugged"
-            android:title="@string/wakeup_when_plugged_unplugged_title"
-            android:summary="@string/wakeup_when_plugged_unplugged_summary"
-            android:defaultValue="true" />
-
-     </PreferenceCategory>
 
 </PreferenceScreen>
