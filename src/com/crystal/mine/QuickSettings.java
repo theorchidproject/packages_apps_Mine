@@ -43,9 +43,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private ListPreference mQuickPulldown;
+public class QuickSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -53,27 +51,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         addPreferencesFromResource(R.xml.category_quicksettings);
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        int qpmode = Settings.System.getIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
-        mQuickPulldown = (ListPreference) findPreference("status_bar_quick_qs_pulldown");
-        mQuickPulldown.setValue(String.valueOf(qpmode));
-        mQuickPulldown.setSummary(mQuickPulldown.getEntry());
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mQuickPulldown) {
-            int value = Integer.parseInt((String) newValue);
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value,
-                    UserHandle.USER_CURRENT);
-            int index = mQuickPulldown.findIndexOfValue((String) newValue);
-            mQuickPulldown.setSummary(
-                    mQuickPulldown.getEntries()[index]);
-            return true;
-        }
-        return false;
     }
 
     @Override
